@@ -60,6 +60,11 @@ public class Homework4 {
         // 3. check if my name contains with "a" (ignore the case)
         System.out.println("Is my name contains 'a'? --> " + myNameEndsWith.contains(checkFor));
 
+        // 4. check if my name starts with "a" (ignore the case)
+        String myNameStarts = "a".toLowerCase();
+        System.out.println("Is my name starts with letter 'a'? --> " + myNameEndsWith.startsWith(myNameStarts));
+
+
 
 
 
@@ -96,6 +101,12 @@ public class Homework4 {
         //String task4_SubTo_U = task4.substring(1).toLowerCase();
         //System.out.println(task4_Sub+task4_SubTo_U);
         System.out.println("Titlecase for task4 word is --> " + task4_Sub);
+
+
+        System.out.println("\n *** Task 4 ***");
+        String task4_King = "kINg";
+        String task4_King_Sub = task4_King.substring(0,1).toUpperCase() + task4_King.substring(1).toLowerCase();
+        System.out.println("Titlecase for task4 word is --> " + task4_King_Sub);
 
 
 
