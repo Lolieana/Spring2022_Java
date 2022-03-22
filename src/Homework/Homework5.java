@@ -76,11 +76,11 @@ public class Homework5 {
         // Q4 Answer:
         System.out.println("\n**** Question 4 ****");
 
-        int number =15;
+        int number =30;
         System.out.println("Number to check is = " + number);
-        if ( number % 5 == 0 ) {
+        if ( number % 5 == 0 && number % 3 != 0 ) {
             System.out.println("Divisible by 5");
-        } else if ( number % 3 == 0  ) {
+        } else if ( number % 3 == 0 && number % 5 != 0  ) {
             System.out.println("Divisible by 3");
         } else if ( number % 5 == 0 && number % 3 == 0  ) {
             System.out.println("Divisible by 5 and 3");
@@ -112,7 +112,7 @@ public class Homework5 {
         // Q5 Answer:
         System.out.println("\n**** Question 5 ****");
 
-        double studentScore = 300;
+        double studentScore = 120 ;
         int maxScore = 200;
         double percentage = ( studentScore / maxScore ) * 100;
 
@@ -151,7 +151,7 @@ public class Homework5 {
         System.out.println("\n**** Question 6 ****");
         String[] words = {"healthy", "speak", "learning", "king", "Joy", "smile", "learn", "live" , "give", "living standard", "life"};
         for ( int i = 0 ; i <= words.length-1 ; i++ ) {
-            if ( words[i].length() > 5 ) {
+            if ( words[i].length() > 5 && words[i].toLowerCase().startsWith("l") ) {
                 System.out.println (words[i]);
             }
         }
