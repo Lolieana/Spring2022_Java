@@ -23,7 +23,7 @@ public class Homework6 {
          */
         //Q1:
         System.out.println("*** Q1 for loop ***");
-        String sentence1 = "happy birthday to you dear friend";
+        String sentence1 = "happy birthday to you my dear friend more mORe";
         System.out.println("Original String Value ---> " + sentence1);
         String abbr = "";
         String[] sentenceToSplit = sentence1.split(" ");
@@ -33,7 +33,7 @@ public class Homework6 {
         System.out.println("Abbreviation is ---> " + abbr.trim());
 
         System.out.println("\n*** Q1 Enhanced for loop ***");
-        String sentence_1 = "happy birthday to you dear friend";
+        String sentence_1 = "happy birthday to you my dear friend more mORe";
         System.out.println("Original String Value ---> " + sentence_1);
         String abbreviation = "";
         String[] sentence_ToSplit = sentence_1.split(" ");
@@ -44,19 +44,19 @@ public class Homework6 {
         System.out.println("Abbreviation is ---> " + abbreviation.trim());
 
         System.out.println("\n*** Q1 While loop ***");
-        String sentence1_W = "happy birthday to you dear friend";
+        String sentence1_W = "happy birthday to you my dear friend more";
         System.out.println("Original String Value ---> " + sentence1_W);
         String abbr_W = "";
         int j = 0;
         String[] sentenceToSplit_W = sentence1_W.split(" ");
-        while ( j < sentenceToSplit.length ) {
+        while ( j < sentenceToSplit_W.length ) {
             abbr_W += sentenceToSplit_W[j].toUpperCase().substring(0,1);
             j++;
         }
         System.out.println("Abbreviation is ---> " + abbr_W.trim());
 
         System.out.println("\n*** Q1 do While loop ***");
-        String sentence_W = "happy birthday to you dear friend";
+        String sentence_W = "happy birthday to you my dear friend";
         System.out.println("Original String Value ---> " + sentence_W);
         String answer = "";
         int g = 0;
@@ -64,7 +64,7 @@ public class Homework6 {
         do {
             answer += sentToSplit[g].toUpperCase().substring(0, 1);
             g++;
-        } while (g < sentenceToSplit.length);
+        } while (g < sentToSplit.length);
         System.out.println("Abbreviation is ---> " + answer.trim());
 
 
@@ -82,7 +82,7 @@ public class Homework6 {
          */
         //Q2:
         System.out.println("\n\n*** Q2 for loop ***");
-        String sentence2 = "make america great again";
+        String sentence2 = "make america great again again again";
         System.out.println("Original String ---> " + sentence2);
         String reverseSentence = "";
         String[] sentence2_S = sentence2.split(" ");
@@ -92,7 +92,7 @@ public class Homework6 {
        System.out.println("Reverse String ---> " + reverseSentence.trim());
 
         System.out.println("\n*** Q2 While loop ***");
-        String sentence_2 = "make america great again";
+        String sentence_2 = "make america great again again again";
         System.out.println("Original String ---> " + sentence_2);
         String reverse_Sentence = "";
         int w = 1;
@@ -105,7 +105,7 @@ public class Homework6 {
 
 
         System.out.println("\n*** Q2 do While loop ***");
-        String sentenceOrigi = "make america great again";
+        String sentenceOrigi = "make america again again";
         System.out.println("Original String ---> " + sentenceOrigi);
         String SentenceReverse = "";
         int i = 1;
@@ -114,7 +114,7 @@ public class Homework6 {
             SentenceReverse += sentenceToSpli[sentenceToSpli.length-i] + " ";
             i++;
 
-        } while (i <= sentence_2_S.length) ;
+        } while (i <= sentenceToSpli.length) ;
         System.out.println("Reverse String ---> " + SentenceReverse.trim());
 
 
@@ -189,7 +189,7 @@ public class Homework6 {
          */
         //Q4:
         System.out.println("\n\n*** Q4 for loop ***");
-        int[] numbers = {1, 21, 87, 23};
+        int[] numbers = {1, 21, 87,-1, 23};
         System.out.println("Original array ---> " + Arrays.toString(numbers));
         int result = numbers[0] ;
         for ( int q = 0 ; q <= numbers.length-1 ; q++ ) {
@@ -200,11 +200,11 @@ public class Homework6 {
         System.out.println("Mimimum value ---> " + result);
 
         System.out.println("\n*** Q4 while loop ***");
-        int[] number = {87, 23, 89, 0, 54, 23};
+        int[] number = {87, 23, 89, 54, 23};
         System.out.println("Original array ---> " + Arrays.toString(number));
         int res = number[0];
         int z = 0 ;
-        while ( z <= numbers.length-1 ) {
+        while ( z <= number.length-1 ) {
             if ( res > number[z]) {
                 res = number[z] ;
             }
@@ -213,7 +213,7 @@ public class Homework6 {
         System.out.println("Mimimum value ---> " + res);
 
         System.out.println("\n*** Q4 do while loop ***");
-        int[] numberOrig = {87, 23, 89, 0, 54, 23};
+        int[] numberOrig = {87, 23, 89, 0, 54, 23,5};
         System.out.println("Original array ---> " + Arrays.toString(numberOrig));
         int minimumVal = number[0];
         int d = 0 ;
@@ -223,7 +223,7 @@ public class Homework6 {
 
             }
             d++;
-        } while (d <= numbers.length - 1) ;
+        } while (d <= numberOrig.length - 1) ;
         System.out.println("Mimimum value ---> " + minimumVal);
 
 
